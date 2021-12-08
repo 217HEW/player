@@ -5,6 +5,8 @@
 
 int main(void)
 {
+	printf("github”½‰f‚ÌŽd•û");
+
 	rewind(stdin);
 	getchar();
 	return 0;
