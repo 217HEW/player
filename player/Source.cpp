@@ -5,6 +5,8 @@
 
 int main(void)
 {
+	printf("Ž„‚ª—ˆ‚½\n");
+
 	rewind(stdin);
 	getchar();
 	return 0;
