@@ -14,20 +14,30 @@
 #ifndef __PLAYER_H__
 #define __PLAYER_H__
 
+// ---マクロ定義---
 
-// ---プレイヤークラス
+// ---プレイヤークラス---
 class Player
 {
 public:
 	Player();
 	~Player();
 
-	void InitPlayer();		// 初期化
-	void UninitPlayer();	// 終了
-	void UpdatePlayer();	// 更新
-	void DrawPlayer();		// 描画
+	void Init();		// 初期化
+	void Uninit();		// 終了
+	void Update();		// 更新
+	void Draw();		// 描画
+	float GetPos();		// プレイヤー座標取得
+
+	float m_pos;		// 座標(後から3軸の型に変更)
+	float m_rot;		// 座標(後から3軸の型に変更)
+	int m_Life;
+	bool m_bDamage;		// ダメージ判定
+	bool m_bLanding;	// 着地判定
 
 private:
+	float m_size;		// サイズ(後から3軸の型に変更)
+	float m_speed;		// 移動速度
 
 };
 
